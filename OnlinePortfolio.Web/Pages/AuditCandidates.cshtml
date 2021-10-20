@@ -1,0 +1,19 @@
+@page
+@model AuditCandidatesModel
+@{
+    ViewData["Title"] = "Candidates page";
+}
+
+<div class="card-columns">
+@foreach (var candidate in Model.Candidates)
+{
+    <div class="card">
+        <div class="card-img">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@candidate.FirstName</h5>
+            <h5 class="card-title">@candidate.LastName</h5>
+        </div>
+    </div>
+}
+</div>

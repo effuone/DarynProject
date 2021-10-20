@@ -1,0 +1,98 @@
+[
+    {
+        "id": "4f309bbc-0fc4-4248-a4a3-c2d91c13e8b1",
+        "firstName": "Alibek",
+        "lastName": "Seitov",
+        "schoolName": "ISN",
+        "grade": 11,
+        "emailAddress": "albkfil@gmail.com",
+        "cellphoneNumber": "+77019867333",
+        "achievements": [
+            {
+                "achievementName": "IELTS",
+                "score": 9,
+                "achievedDate": "2021-12-23T07:07:23+06:00",
+                "expiringDate": "2023-12-23T07:07:23+06:00"
+            },
+            {
+                "achievementName": "SAT",
+                "score": 1600,
+                "achievedDate": "2022-05-15T07:08:23+06:00",
+                "expiringDate": null
+            }
+        ],
+        "createdDate": "2021-10-18T17:41:15.7629819+00:00"
+    },
+    {
+        "id": "79562379-24a8-4076-a78b-d3855b7e5683",
+        "firstName": "Tamir",
+        "lastName": "Talgat",
+        "schoolName": "ISN",
+        "grade": 11,
+        "emailAddress": "talgat_t@isa.nis.edu.kz",
+        "cellphoneNumber": "++77022490332",
+        "achievements": [
+            {
+                "achievementName": "IELTS",
+                "score": 7,
+                "achievedDate": "2021-12-23T07:07:23+06:00",
+                "expiringDate": "2023-12-23T07:07:23+06:00"
+            },
+            {
+                "achievementName": "SAT",
+                "score": 1300,
+                "achievedDate": "2022-05-15T07:08:23+06:00",
+                "expiringDate": null
+            }
+        ],
+        "createdDate": "2021-10-19T10:30:40.1969146+00:00"
+    },
+    {
+        "id": "cd7a65bc-525a-4247-b93c-8362c44769df",
+        "firstName": "Insar",
+        "lastName": "Tungushbaev",
+        "schoolName": "ISN",
+        "grade": 9,
+        "emailAddress": "insartungushbaev@gmail.com",
+        "cellphoneNumber": "+77082648498",
+        "achievements": [
+            {
+                "achievementName": "IELTS",
+                "score": 8,
+                "achievedDate": "2021-12-23T07:07:23+06:00",
+                "expiringDate": "2023-12-23T07:07:23+06:00"
+            },
+            {
+                "achievementName": "SAT",
+                "score": 1400,
+                "achievedDate": "2022-05-15T07:08:23+06:00",
+                "expiringDate": null
+            }
+        ],
+        "createdDate": "2021-10-19T10:31:47.1752286+00:00"
+    },
+    {
+        "id": "48632685-7943-44a4-8900-83ad09cea8f2",
+        "firstName": "Haknazar",
+        "lastName": "Abilda",
+        "schoolName": "ISN",
+        "grade": 11,
+        "emailAddress": "haknazar111@gmail.com",
+        "cellphoneNumber": "+77012166572",
+        "achievements": [
+            {
+                "achievementName": "IELTS",
+                "score": 6,
+                "achievedDate": "2021-12-23T07:07:23+06:00",
+                "expiringDate": "2023-12-23T07:07:23+06:00"
+            },
+            {
+                "achievementName": "SAT",
+                "score": 1500,
+                "achievedDate": "2022-05-15T07:08:23+06:00",
+                "expiringDate": null
+            }
+        ],
+        "createdDate": "2021-10-19T10:33:36.4103924+00:00"
+    }
+]
