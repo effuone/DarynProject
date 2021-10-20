@@ -56,10 +56,14 @@ namespace OnlinePortfolio.Api.Controllers
                 Id = Guid.NewGuid(),
                 FirstName = candidateDto.FirstName,
                 LastName = candidateDto.LastName,
+                Birthday = candidateDto.Birthday,
+                Country = candidateDto.Country,
+                City = candidateDto.City,
                 SchoolName = candidateDto.SchoolName,
                 Grade = candidateDto.Grade,
                 CellphoneNumber = candidateDto.CellphoneNumber,
                 EmailAddress = candidateDto.EmailAddress,
+                GraduationYear = candidateDto.GraduationYear,
                 Achievements = candidateDto.Achievements,
                 CreatedDate = DateTimeOffset.UtcNow
             };
@@ -76,11 +80,13 @@ namespace OnlinePortfolio.Api.Controllers
             {
                 return NotFound();
             }
-
             existingCandidate.FirstName = candidateDto.FirstName;
             existingCandidate.LastName = candidateDto.LastName;
-            existingCandidate.SchoolName = candidateDto.SchoolName;
+            existingCandidate.Birthday = candidateDto.Birthday;
+            existingCandidate.Country = candidateDto.Country;
+            existingCandidate.City = candidateDto.City;
             existingCandidate.Grade = candidateDto.Grade;
+            existingCandidate.GraduationYear = candidateDto.GraduationYear;
             existingCandidate.CellphoneNumber = candidateDto.CellphoneNumber;
             existingCandidate.EmailAddress = candidateDto.EmailAddress;
             existingCandidate.Achievements = candidateDto.Achievements;
