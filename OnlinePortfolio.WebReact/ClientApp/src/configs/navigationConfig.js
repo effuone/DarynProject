@@ -10,6 +10,14 @@ const navigationConfig = [
     navLink: "/",
   },
   {
+    id: "universities",
+    title: "Universities",
+    type: "item",
+    icon: <Icon.Briefcase size={20} />,
+    permissions: ["admin", "editor"],
+    navLink: "/universities",
+  },
+  {
     id: "about",
     title: "About",
     type: "item",
@@ -24,22 +32,6 @@ const navigationConfig = [
     icon: <Icon.Book size={20} />,
     permissions: ["admin", "editor"],
     navLink: "/portfolio",
-  },
-  {
-    id: "resources",
-    title: "Resources",
-    type: "item",
-    icon: <Icon.Box size={20} />,
-    permissions: ["admin", "editor"],
-    navLink: "/resources",
-  },
-  {
-    id: "profile",
-    title: "My profile",
-    type: "item",
-    icon: <Icon.Settings size={20} />,
-    permissions: ["admin", "editor"],
-    navLink: "/profile",
   }
 ]
 

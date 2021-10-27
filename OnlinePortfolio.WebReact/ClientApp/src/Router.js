@@ -22,8 +22,8 @@ const Resources = lazy(() =>
   import("./views/pages/Resources")
 )
 
-const Profile = lazy(() =>
-  import("./views/pages/Profile")
+const Universities = lazy(() =>
+  import("./views/pages/Universities")
 )
 
 const login = lazy(() =>
@@ -95,8 +95,8 @@ class AppRouter extends React.Component {
             component={Resources}
           />
           <AppRoute
-            path="/profile"
-            component={Profile}
+            path="/universities"
+            component={Universities}
           />
           <AppRoute
             path="/login"
