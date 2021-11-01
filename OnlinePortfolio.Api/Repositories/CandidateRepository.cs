@@ -7,7 +7,7 @@ using OnlinePortfolio.Api.Models;
 
 namespace OnlinePortfolio.Api.Repositories
 {
-    public class CandidateRepository : IAsyncRepository<Candidate>
+    public class CandidateRepository : IGuidAsyncRepository<Candidate>
     {
         private const string databaseName = "UniversityApplication";
         private const string collectionName = "candidates";

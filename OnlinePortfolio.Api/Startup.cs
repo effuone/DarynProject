@@ -40,7 +40,8 @@ namespace OnlinePortfolio.Api
             {
                 return new MongoClient(mongoDbSettings.ConnectionString);
             });
-            services.AddSingleton<IAsyncRepository<Candidate>, CandidateRepository>();
+            services.AddSingleton<IGuidAsyncRepository<Candidate>, CandidateRepository>();
+            services.AddSingleton<IAsyncRepository<University>, UniversityRepository>();
             services.AddControllers(options => {
                 options.SuppressAsyncSuffixInActionNames = false;
             });
