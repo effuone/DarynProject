@@ -14,9 +14,9 @@ namespace OnlinePortfolio.Api.Controllers
     [Route("candidates")]
     public class CandidateController : ControllerBase
     {
-        private readonly IAsyncRepository<Candidate> repository;
+        private readonly IGuidAsyncRepository<Candidate> repository;
         private readonly ILogger<CandidateController> logger;
-        public CandidateController(IAsyncRepository<Candidate> repository, ILogger<CandidateController> logger)
+        public CandidateController(IGuidAsyncRepository<Candidate> repository, ILogger<CandidateController> logger)
         {
             this.repository = repository;
             this.logger = logger;
