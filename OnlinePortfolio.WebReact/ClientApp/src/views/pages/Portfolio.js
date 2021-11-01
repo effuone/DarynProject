@@ -1,7 +1,8 @@
 import React from "react"
 import { Row, Col, Card, CardBody, Button } from "reactstrap"
-import userImg from "../../assets/img/portrait/small/avatar-s-11.jpg"
+import userImg from "../../assets/img/ava.jpg"
 import certImg from "../../assets/img/сертификат.jpg"
+import certImg2 from "../../assets/img/certificate-2.PNG"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
 import "../../assets/scss/pages/portfolio.scss"
@@ -76,9 +77,9 @@ class Portfolio extends React.Component{
                   <p className="cert-text">Описание</p>
                 </div>
                 <div>
-                  <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 2</h6>
-                  <p className="cert-text">Описание</p>
+                  <img src={certImg2} className="pb-1 w-100"/>
+                  <h6 className="cert-text">NASA SPACE APPS</h6>
+                  <p className="cert-text">Ежегодный хакатон от NASA, где участники за 48 часов должны решить необычную задачу</p>
                 </div>
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>

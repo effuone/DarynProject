@@ -18,13 +18,12 @@ using OnlinePortfolio.Api.Repositories;
 namespace OnlinePortfolio.Api.Controllers
 {
     [ApiController]
-    [Route("candidates")]
+    [Route("values")]
     public class ValuesContoller : ControllerBase
     {
         private IdentityDataContext dbContext;
         private readonly UserManager<ApplicationDbIdentity> userManager;
         private readonly SignInManager<ApplicationDbIdentity> signInManager;
-
         public ValuesContoller(
         IdentityDataContext dbContext,
         UserManager<ApplicationDbIdentity> userManager,
