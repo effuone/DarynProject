@@ -1,9 +1,14 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using OnlinePortfolio.Api.DTOs;
 using OnlinePortfolio.Api.Models;
 using OnlinePortfolio.Api.Repositories;
@@ -59,6 +64,8 @@ namespace OnlinePortfolio.Api.Controllers
                 CityId = universityDto.CityId,
                 Description = universityDto.Description,
             };
+            var all = await repository.GetAllAsync();
+            item.Id = all.LastOrDefault().Id + 1;
             await repository.CreateAsync(item);
             return CreatedAtAction(nameof(GetUniversityAsync), new { id = item.Id}, item.AsDto());
         }
@@ -94,5 +101,6 @@ namespace OnlinePortfolio.Api.Controllers
             await repository.DeleteAsync(id);
             return NoContent();
         }
+        
     }
 }

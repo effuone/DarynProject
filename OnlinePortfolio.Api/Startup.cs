@@ -1,19 +1,25 @@
 using System;
 using System.Linq;
 using System.Net.Mime;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
+using OnlinePortfolio.Api.Areas.Identity.Data;
 using OnlinePortfolio.Api.Models;
 using OnlinePortfolio.Api.Repositories;
 using OnlinePortfolio.Api.Settings;
@@ -55,6 +61,39 @@ namespace OnlinePortfolio.Api
                 name: "mongodb", 
                 timeout: TimeSpan.FromSeconds(3),
                 tags: new[]{"ready"});
+
+            var key = Encoding.ASCII.GetBytes("MY_BIG_SECRET_KEY_LKSHDJFLSDKJFW@#($)(#)34234");
+
+            services.AddAuthentication(x=>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x=>
+            {
+                x.Events = new JwtBearerEvents
+                {
+                    OnTokenValidated = context =>
+                    {
+                        var userMachine = context.HttpContext.RequestServices.GetRequiredService<UserManager<ApplicationDbIdentity>>();
+                        var user = userMachine.GetUserAsync(context.HttpContext.User);
+                        if(user == null)
+                        {
+                            context.Fail("Unauthorized");
+                        }
+                        return Task.CompletedTask;
+                    }
+                };
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
