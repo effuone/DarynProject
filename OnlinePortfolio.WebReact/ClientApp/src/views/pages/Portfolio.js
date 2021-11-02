@@ -33,17 +33,17 @@ class Portfolio extends React.Component{
           <Row className="py-2">
             <Col sm="12" md="8" xl="8">
               <div>
-                <h5>Сейчас на сайте</h5>
-                <h1>Сеитов Алибек</h1>
-                <h6>Мужчина, 17 лет, родился 20 сентября 2004</h6>
-                <a href="#">Редактировать</a>
+                <h5>Online</h5>
+                <h1>Seitov Aliber</h1>
+                <h6>Male, 17 years old, born September 20th 2004</h6>
+                <a href="#">Edit</a>
               </div>
               <hr/>
               <div className="pt-1">
-                <h3>Контакты</h3>
-                <p>+7 701 986 7333 - предпочитаемый способ связи
+                <h3>Contacts</h3>
+                <p>+7 701 986 7333 - preffered
                   <br/><a href="#">email@gmail.com</a>
-                  <br/><a href="#">Редактировать</a>
+                  <br/><a href="#">Edit</a>
                 </p>
               </div>
             </Col>
@@ -53,7 +53,7 @@ class Portfolio extends React.Component{
                   className="w-100"
                   src={userImg} 
                   alt="Portfolio"/>
-                <Button className="w-100" color="link">Изменить фото</Button>
+                <Button className="w-100" color="link">Edit photo</Button>
               </div>
             </Col>
           </Row>
@@ -61,10 +61,10 @@ class Portfolio extends React.Component{
           <Row className="py-2">
             <Col>
               <div className="d-flex align-items-center">
-                <h2>Лист достижений</h2>
-                <a className="pl-1 edit-btn" href="#">Редактировать</a>
+                <h2>List of achievements</h2>
+                <a className="pl-1 edit-btn" href="#">Edit</a>
               </div>
-              <p>Мои достижения за весь период обучения</p>
+              <p>My achievements for the entire period of study</p>
               <Carousel
                 autoPlay
                 infinite
@@ -72,28 +72,28 @@ class Portfolio extends React.Component{
                 className="pt-1">
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 1</h6>
-                  <p className="cert-text">Описание</p>
+                  <h6 className="cert-text">Certificate 1</h6>
+                  <p className="cert-text">Description</p>
                 </div>
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 2</h6>
-                  <p className="cert-text">Описание</p>
+                  <h6 className="cert-text">Certificate 2</h6>
+                  <p className="cert-text">Description</p>
                 </div>
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 3</h6>
-                  <p className="cert-text">Описание</p>
+                  <h6 className="cert-text">Certificate 3</h6>
+                  <p className="cert-text">Description</p>
                 </div>
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 4</h6>
-                  <p className="cert-text">Описание</p>
+                  <h6 className="cert-text">Certificate 4</h6>
+                  <p className="cert-text">Description</p>
                 </div>
                 <div>
                   <img src={certImg} className="pb-1 w-100"/>
-                  <h6 className="cert-text">Сертификат 5</h6>
-                  <p className="cert-text">Описание</p>
+                  <h6 className="cert-text">Certificate 5</h6>
+                  <p className="cert-text">Description</p>
                 </div>
               </Carousel>
             </Col>
@@ -102,14 +102,14 @@ class Portfolio extends React.Component{
           <Row className="py-2">
             <Col>
               <div className="d-flex align-items-center">
-                <h2>Обо мне</h2>
-                <a className="pl-1 edit-btn" href="#">Редактировать</a>
+                <h2>About me</h2>
+                <a className="pl-1 edit-btn" href="#">Edit</a>
               </div>
-              <p>Информационные технологии, интернет, телеком</p>
+              <p>Information technology, internet, telecom</p>
               <ul>
-                <li>Программирование, Разработка</li>
-                <li>Управление проектами</li>
-                <li>Web мастер</li>
+                <li>Programming, development</li>
+                <li>Project management</li>
+                <li>Web master</li>
               </ul>
             </Col>
           </Row>
@@ -117,32 +117,32 @@ class Portfolio extends React.Component{
           <Row className="py-2">
             <Col>
               <div className="d-flex align-items-center w-100">
-                <h2>Внешняя деятельность</h2>
-                <a className="pl-1 edit-btn" href="#">Редактировать</a>
+                <h2>External activities</h2>
+                <a className="pl-1 edit-btn" href="#">Edit</a>
               </div>
               <div className="py-1">
                 <Row className="py-2">
                   <Col xs="12" md="3" lg="2">
-                    <h5>Акселератор</h5>
+                    <h5>Accelerator</h5>
                   </Col>
                   <Col xs="12" md="5" lg="5">
-                    Проходил акселерацию в Астанахабе
+                  Passed acceleration in Astanahub
                   </Col>
                 </Row>
                 <Row className="py-2">
                   <Col xs="12" md="3" lg="2">
-                    <h5>Компьютерная академия ШАГ</h5>
+                    <h5>STEP Computer Academy</h5>
                   </Col>
                   <Col xs="12" md="5" lg="5">
-                    Проходил курсы по программированию на ASP.NET, UML-проектирование, основы программирования, MySQL
+                    Took courses in ASP.NET programming, UML-design, programming basics, MySQL
                   </Col>
                 </Row>
                 <Row className="py-2">
                   <Col xs="12" md="3" lg="2">
-                    <h5>Акселератор</h5>
+                    <h5>Accelerator</h5>
                   </Col>
                   <Col xs="12" md="5" lg="5">
-                    Проходил акселерацию в Астанахабе
+                  Passed acceleration in Astanahub
                   </Col>
                 </Row>
               </div>

@@ -9,8 +9,8 @@ class Home extends React.Component{
       <Card className="search-block">
         <CardBody className="overlay d-flex align-items-center justify-content-center">
           <div className="py-3 w-50">
-            <h1 className="text-offer">Подай свое портфолио в лучшие университеты мира в один клик!</h1>
-            <p className="text-search">Введите название университета для поиска</p>
+            <h1 className="text-offer">Submit your portfolio to the best universities in the world in one click!</h1>
+            <p className="text-search">Enter the name of the university to search</p>
             <InputGroup>
               <Input placeholder="University name"/>
               <InputGroupAddon addonType='append'>
@@ -27,7 +27,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -44,7 +44,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -61,7 +61,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -80,7 +80,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -97,7 +97,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -114,7 +114,7 @@ class Home extends React.Component{
             <Col>
               <Card>
                 <CardHeader>
-                  <h3>Nazarbayev Universityт</h3>
+                  <h3>Nazarbayev University</h3>
                 </CardHeader>
                 <CardBody>
                   <p>Nazarbayev University is an autonomous research university 
@@ -133,78 +133,78 @@ class Home extends React.Component{
       <div>
         <Row>
           <Col xs="12" md="4" lg="3">
-            <h3 className="pb-3">Университеты Казахстана</h3>
+            <h3 className="pb-3">Universities of Kazakhstan</h3>
             <div>
-              <a href="#"><p>Казахский национальный университет имени аль-Фараби</p></a>
-              <a href="#"><p>Евразийский национальный университет имени Л.Н. Гумилева</p></a>
-              <a href="#"><p>Казахская национальная академия искусств имени Т. Жургенова</p></a>
-              <a href="#"><p>Казахский национальный аграрный университет</p></a>
-              <a href="#"><p>Казахский национальный исследовательский технический университет им. К.И. Сатпаева</p></a>
-              <a href="#"><p>Казахская национальная академия хореографии</p></a>
-              <a href="#"><p>Казахская национальная консерватория имени Курмангазы</p></a>
-              <a href="#"><p>Казахский национальный женский педагогический университет</p></a>
-              <a href="#"><p>Казахский национальный медицинский университет имени С.Д. Асфендиярова</p></a>
+              <a href="#"><p>Al-Farabi Kazakh National University</p></a>
+              <a href="#"><p>Eurasian National University named after L.N. Gumilyov</p></a>
+              <a href="#"><p>Kazakh National Academy of Arts named after T. Zhurgenov</p></a>
+              <a href="#"><p>Kazakh National Agrarian University</p></a>
+              <a href="#"><p>Kazakh National Research Technical University named after K.I. Satpayeva</p></a>
+              <a href="#"><p>Kazakh National Academy of Choreography</p></a>
+              <a href="#"><p>Kurmangazy Kazakh National Conservatory</p></a>
+              <a href="#"><p>Kazakh National Women's Pedagogical University</p></a>
+              <a href="#"><p>Kazakh National Medical University named after S.D. Asfendiyarova</p></a>
             </div>
           </Col>
           <Col xs="12" md="6" lg="7">
-            <h3 className="pb-3">Популярные университеты в Казахстане</h3>
+            <h3 className="pb-3">Popular universities in Kazakhstan</h3>
             <Row className="pb-2">
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
             </Row>
             <Row className="pb-2">
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
-                <Button className="see-btn" color="link">See more</Button>
-              </Col>
-            </Row>
-            <Row className="pb-2">
-              <Col>
-                <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
-                <Button className="see-btn" color="link">See more</Button>
-              </Col>
-              <Col>
-                <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
             </Row>
             <Row className="pb-2">
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
             </Row>
             <Row className="pb-2">
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
               <Col>
                 <h4>Nazarbayev university</h4>
-                <p>г. Нур-Султан</p>
+                <p>Nur-Sultan</p>
+                <Button className="see-btn" color="link">See more</Button>
+              </Col>
+            </Row>
+            <Row className="pb-2">
+              <Col>
+                <h4>Nazarbayev university</h4>
+                <p>Nur-Sultan</p>
+                <Button className="see-btn" color="link">See more</Button>
+              </Col>
+              <Col>
+                <h4>Nazarbayev university</h4>
+                <p>Nur-Sultan</p>
                 <Button className="see-btn" color="link">See more</Button>
               </Col>
             </Row>
