@@ -24,5 +24,17 @@ namespace OnlinePortfolio.Api
                 entity.CreatedDate
             );
         }
+        public static UniversityDto AsDto(this University entity)
+        {
+            return new UniversityDto
+            (
+                entity.Id,
+                entity.Name,
+                entity.CreationDate,
+                entity.CountryId,
+                entity.CityId,
+                entity.Description
+            );
+        }
     }
 }

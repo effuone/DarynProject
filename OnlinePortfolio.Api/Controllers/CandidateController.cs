@@ -1,9 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
+using OnlinePortfolio.Api.Areas.Identity.Data;
 using OnlinePortfolio.Api.DTOs;
 using OnlinePortfolio.Api.Models;
 using OnlinePortfolio.Api.Repositories;
@@ -14,12 +21,23 @@ namespace OnlinePortfolio.Api.Controllers
     [Route("candidates")]
     public class CandidateController : ControllerBase
     {
-        private readonly IAsyncRepository<Candidate> repository;
+        private IdentityDataContext dbContext;
+        private readonly UserManager<ApplicationDbIdentity> userManager;
+        private readonly SignInManager<ApplicationDbIdentity> signInManager;
+        private readonly IGuidAsyncRepository<Candidate> repository;
         private readonly ILogger<CandidateController> logger;
-        public CandidateController(IAsyncRepository<Candidate> repository, ILogger<CandidateController> logger)
+        public CandidateController(
+        IGuidAsyncRepository<Candidate> repository, 
+        ILogger<CandidateController> logger,
+        IdentityDataContext dbContext,
+        UserManager<ApplicationDbIdentity> userManager,
+        SignInManager<ApplicationDbIdentity> signInManager)
         {
             this.repository = repository;
             this.logger = logger;
+            this.dbContext = dbContext;
+            this.userManager = userManager;
+            this.signInManager = signInManager; 
         }
         //GET
         [HttpGet]
@@ -108,5 +126,6 @@ namespace OnlinePortfolio.Api.Controllers
             await repository.DeleteAsync(id);
             return NoContent();
         }
+        
     }
 }
